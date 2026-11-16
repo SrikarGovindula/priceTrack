@@ -1,0 +1,140 @@
+/* Price Comparison Module */
+.comparison-container {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.comparison-header {
+  padding: 18px 24px;
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.comparison-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.best-option-banner {
+  margin: 20px 24px;
+  padding: 16px 20px;
+  background-color: var(--color-success-bg);
+  border: 1px solid rgba(22, 163, 74, 0.3);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.best-option-info h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-success);
+  margin-bottom: 2px;
+}
+
+.best-option-info p {
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.comparison-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.comparison-table th {
+  padding: 14px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-text-muted);
+  background-color: var(--color-bg-alt);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.comparison-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border-subtle);
+  vertical-align: middle;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: var(--color-bg-alt);
+}
+
+.comparison-table tbody tr.is-lowest {
+  background-color: rgba(22, 163, 74, 0.04);
+}
+
+.store-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.store-logo-img {
+  height: 24px;
+  max-width: 90px;
+  object-fit: contain;
+}
+
+.store-name-text {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.price-cell {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.price-cell.lowest-price {
+  color: var(--color-success);
+}
+
+.diff-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-muted);
+}
+
+.delivery-cell {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.source-badge {
+  font-size: 10px;
+  color: var(--color-text-light);
+  background-color: var(--color-bg-subtle);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  margin-top: 4px;
+}
