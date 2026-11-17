@@ -3,8 +3,8 @@ require("dotenv").config({ path: path.join(__dirname, "..", ".env") });
 
 module.exports = {
   PORT: process.env.PORT || 5000,
-  MONGO_URI:process.env.MONGO_URI ||"mongodb://127.0.0.1:27017",
-  DB_NAME: "pricetrack" || process.env.DB_NAME,
+  MONGO_URI: process.env.MONGODB_URI || process.env.MONGO_URI || "mongodb://127.0.0.1:27017",
+  DB_NAME: process.env.DB_NAME || "pricetrack",
   SESSION_SECRET:
     process.env.SESSION_SECRET ||
     "pricetrack_super_secret_session_key_2025_secure",
